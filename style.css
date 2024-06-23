@@ -1,0 +1,130 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.google.com/specimen/Outfit');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+:root{
+    /* ## Cores */
+
+/* ### Primário  */
+
+--Azul-suave: hsl(215, 51%, 70%);
+--Ciano: hsl(178, 100%, 50%);
+
+/* ### Neutro */
+
+--Azul-muito-escuro-glicemia-principal: hsl(217, 54%, 11%);
+--Azul-muito-escuro-cartão-BG: hsl(216, 50%, 16%);
+--Azul-muito-escuro-linha: hsl(215, 32%, 27%);
+
+/* ### Font */
+
+--Family:'outfit';
+}
+p{
+    font-size: 15px;
+    color: var(--Azul-suave);
+}
+h1{
+    font-size: 20px;
+    padding: 20px 0px;
+    
+}
+#p{
+    line-height: 25px;
+}
+a{
+    color: white;
+    
+}
+h4{
+    color: var(--Ciano);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--Azul-muito-escuro-glicemia-principal);
+    font-family: var(--Family);
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--Azul-muito-escuro-cartão-BG);
+    color: white;
+    padding: 20px;
+     border-radius: 10px;
+}
+.card-img-top{
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+    background-image: url('images/image-equilibrium.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.view{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.view:hover{ 
+    background: #15f5ff78;
+    background-image: url('images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+img{
+    margin-right: 8px;
+}
+.cont{
+    display: flex;
+    align-items: center;
+}
+.para_img{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 10px 0px;
+}
+section .para_img > img{
+    width: 30px;  
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.para_img p{
+    margin-left: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+hr{
+    border:1px solid var(--Azul-muito-escuro-linha);
+}
+
+@media screen and (min-width:768px){
+    section{
+        width: 330px;
+    }
+    .card-img-top{
+        width:290px ;
+        height:290px ;
+    }
+    h1:hover{
+        color: var(--Ciano);
+    }
+    a:hover{
+        color: var(--Ciano);
+    }
+}
